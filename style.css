@@ -1,78 +1,80 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-align: center;
 }
 
 body {
-    font-family: "Arial, Helvetice Neue, Helvetica, sans-serif";
+    background-color: #777;
+    font-size: 18px;
+    font-family: 'Arial','Helvetice Neue','Helvetica','sans-serif';
     Color: #777;
-    backround: #777;
-    width: 960px;
-    front-size: 18px;
-}
-
-Header,
-Nav,
-Section,
-Aside,
-Footer {
-    background: #ebebeb;
+    margin: 0 auto;
+    widith: 960px;
 }
 
 header {
-    padding: 20px;
-    margin-bottom: 10px;
-    color: #777;
-    background: #ebebeb;
+    background-color: #ebebeb;
+    width: 960px;
+    padding: 30px;
+    margin: 10px auto;
 }
 
 nav {
-    padding: 20px;
-    margin-bottom: 20px;
+    background-color: #ebebeb;
+    width: 960px;
+    padding: 30px;
+    margin: 10px auto;
 }
 
-#left {
-    color: white;
-    width: 48%;
-    float: left;
-    height: 200px;
-    border: 1px solid #eee;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-#right {
-    color: White;
-    float: left;
-    width: 40%;
-}
-
-#full {
-    clear: both;
+.wrapper {
+    width: 960px;
+    margin: 20px auto;
     overflow: auto;
-    width: 100%;
-    color: #777;
 }
 
-#division {
-    pedding: 20px;
-    margin-top: 20px;
+section {
+    background-color: #ebebeb;
+    width: 495px;
+    height: 300px;
+    margin-right: 10px;
+    float: left;
+    padding-top: 30px;
+}
+
+article {
+    background-color: #777;
+    margin: 20px 10px 10px 10px;
+    padding: 20px;
+    color: #ebebeb;
+}
+
+.content {
+    background: #ebebeb;
+    padding: 20px;
+    margin: 10px auto;
+    color: #777;
 }
 
 aside {
-    width: 48%;
-    height: 200px;
-    border: 1px solid #eee;
-    padding: 20px;
+    background-color: #ebebeb;
+    width: 360px;
     float: right;
-    margin-bottom: 20px;
+    height: 300px;
+    padding: 10px;
 }
 
 footer {
-    padding: 20px;
-    margin-bottom: 20px;
-    color: #777;
-    background: #ebebeb;
     clear: both;
-    width: 100%;
+    background-color: #ebebeb;
+    width: 960px;
+    margin: auto;
+    padding: 30px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
